@@ -1,10 +1,10 @@
-"""Template for programming assignment: calculate minimum distance from given vertex to all other vertices."""
+"""Template for programming assignment: calculate minimum distance from given vertex to all vertices."""
 from typing import Dict, List
 
 
 def calculate_all_distances_from_vertex(n: int, edges: Dict[int, List], vertex: int) -> List:
     """
-    Returns list with minimum distances from vertex to all other vertices, including itself.
+    Returns list with minimum distances from vertex to all vertices, including itself.
     If there is no path, please set distance to -1.
     Vertices are enumerated from 0 to N-1, there N - number of vertices.
 
