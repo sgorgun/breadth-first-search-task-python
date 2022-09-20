@@ -3,7 +3,7 @@ Set of programming assignments that are designed to test knowledge of BFS traver
 
 ## Problem 1: Calculate number of connectivity components in an undirected graph
 
-Given the number of vertices `n` and graph edges (adjacency dictionary) `edges` for an undirected graph, write a function to caclculate the number of connectivity components. Vertices are enumerated from `0` to `n-1`.
+Given the number of vertices `n` and graph edges (adjacency dictionary) `edges` for an undirected graph, write a function to calculate the number of connectivity components. Vertices are enumerated from `0` to `n-1`.
 
 
 **Example 1:**
@@ -49,7 +49,7 @@ Please use a template for the implementation (`tasks/components:find_number_of_c
 
 ## Problem 2: Check if graph has cycle
 
-Given the number of vertices `n` and graph edges (adjacency dictionary) `edges` for an undirected graph, return True if graph contains cycle, otherwise False. Vertices are enumerated from `0` to `n-1`.
+Given the number of vertices `n` and graph edges (adjacency dictionary) `edges` for an undirected graph, return True if graph contains any cycle, otherwise False. Vertices are enumerated from `0` to `n-1`.
 
 **Example 1:**
 ```mermaid
@@ -83,14 +83,14 @@ graph TD;
     D((3)) --- E((4));
 ```
 
-Expected reuslt: False.
+Expected result: False.
 
 Please use a template for the implementation (`tasks/cycle_existence:check_cycle_existence`).
 
 
-## Problem 3: Find all distances from the given vertex to all vertices.
+## Problem 3: Find all distances from the given vertex to all vertices
 
-Given the number of vertices `n`, graph edges (adjacency dictionary) `edges` and initial vertex `vertex`for an undirected graph, return distance list where at index `i` distance between vertices `vertex` and `i` is stored. Vertices are enumerated from `0` to `n-1`. If there is no path from `vertex` to any vertex `i`, set distance to `-1` at index `i`.
+Given the number of vertices `n`, graph edges (adjacency dictionary) `edges` and an initial vertex `vertex` for an undirected graph, return a distance list where at index `i` there is the distance between vertices `vertex` and `i`. Vertices are enumerated from `0` to `n-1`. If there is no path from `vertex` to any vertex `i`, set the distance to `-1` at index `i`.
 
 **Example 1:**
 ```mermaid
@@ -128,7 +128,7 @@ graph TD;
 ```
 `vertex` = 0
 
-Expected reuslt: [0, 1, 2, 2, 3].
+Expected result: [0, 1, 2, 2, 3].
 
 
 Please use a template for the implementation (`tasks/all_distances:calculate_all_distances_from_vertex`).
