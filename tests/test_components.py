@@ -4,7 +4,7 @@ import pytest
 from tasks.components import find_number_of_components
 
 
-@pytest.mark.timeout(2)
+@pytest.mark.timeout(4)
 def test_find_number_of_components():
     """Tests for find_number_of_components function."""
     assert find_number_of_components(5, {}) == 5

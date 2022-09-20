@@ -4,7 +4,7 @@ import pytest
 from tasks.cycle_existence import check_cycle_existence
 
 
-@pytest.mark.timeout(2)
+@pytest.mark.timeout(4)
 def test_cycle_existence():
     """Tests for find_number_of_components function."""
     assert not check_cycle_existence(5, {})
