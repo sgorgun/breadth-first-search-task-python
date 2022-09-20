@@ -1,9 +1,9 @@
 # Breadth-first search
 Set of programming assignments that are designed to test knowledge of BFS traversal for graphs.
 
-## Problem 1: Calculate number of connectivity components in undirected graph
+## Problem 1: Calculate number of connectivity components in an undirected graph
 
-Given number of vertices `n` and graph edges (adjacency dictionary) `edges` for undirected graph, write a function to caclculate number of connectivity components. Vertices are enumerated from `0` to `n-1`.
+Given the number of vertices `n` and graph edges (adjacency dictionary) `edges` for an undirected graph, write a function to caclculate the number of connectivity components. Vertices are enumerated from `0` to `n-1`.
 
 
 **Example 1:**
@@ -49,7 +49,7 @@ Please use a template for the implementation (`tasks/components:find_number_of_c
 
 ## Problem 2: Check if graph has cycle
 
-Given number of vertices `n` and graph edges (adjacency dictionary) `edges` for undirected graph, return True if graph contains cycle, otherwise False. Vertices are enumerated from `0` to `n-1`.v
+Given the number of vertices `n` and graph edges (adjacency dictionary) `edges` for an undirected graph, return True if graph contains cycle, otherwise False. Vertices are enumerated from `0` to `n-1`.
 
 **Example 1:**
 ```mermaid
@@ -90,7 +90,7 @@ Please use a template for the implementation (`tasks/cycle_existence:check_cycle
 
 ## Problem 3: Find all distances from the given vertex to all vertices.
 
-Given number of vertices `n`, graph edges (adjacency dictionary) `edges` and vertex `vertex`for undirected graph, return distance list where at index `i` distance between vertices `vertex` and `i` is stored. Vertices are enumerated from `0` to `n-1`. If there is no path from `vertex`, set distance to `-1`.
+Given the number of vertices `n`, graph edges (adjacency dictionary) `edges` and initial vertex `vertex`for an undirected graph, return distance list where at index `i` distance between vertices `vertex` and `i` is stored. Vertices are enumerated from `0` to `n-1`. If there is no path from `vertex` to any vertex `i`, set distance to `-1` at index `i`.
 
 **Example 1:**
 ```mermaid
