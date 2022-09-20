@@ -22,3 +22,4 @@ def calculate_all_distances_from_vertex(n: int, edges: Dict[int, Set], vertex: i
         List: distance list which reflects distance between initial vertex and all other vertices,
         number at each index I shows the distance from starting vertex to vertex I
     """
+    pass

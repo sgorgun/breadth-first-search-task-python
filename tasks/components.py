@@ -17,3 +17,4 @@ def find_number_of_components(n: int, edges: Dict[int, Set]) -> int:
     Returns:
         int: number of connectivity components in the given undirected graph
     """
+    pass
