@@ -1,8 +1,8 @@
 """Template for programming assignment: calculate number of connectivity components in undirected graph."""
-from typing import Dict, List
+from typing import Dict, Set
 
 
-def find_number_of_components(n: int, edges: Dict[int, List]) -> int:
+def find_number_of_components(n: int, edges: Dict[int, Set]) -> int:
     """
     Returns the number of connectivity components in the undirected graph.
     Vertices are enumerated from 0 to N-1, there N - number of vertices.

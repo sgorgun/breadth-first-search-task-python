@@ -1,8 +1,8 @@
 """Template for programming assignment: calculate minimum distance from given vertex to all vertices."""
-from typing import Dict, List
+from typing import Dict, List, Set
 
 
-def calculate_all_distances_from_vertex(n: int, edges: Dict[int, List], vertex: int) -> List:
+def calculate_all_distances_from_vertex(n: int, edges: Dict[int, Set], vertex: int) -> List:
     """
     Returns list with minimum distances from vertex to all vertices, including itself.
     If there is no path, please set distance to -1.

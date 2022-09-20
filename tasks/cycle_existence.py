@@ -1,8 +1,8 @@
 """Template for programming assignment: check if undirected graph has at least one cycle."""
-from typing import Dict, List
+from typing import Dict, Set
 
 
-def check_cycle_existence(n: int, edges: Dict[int, List]) -> bool:
+def check_cycle_existence(n: int, edges: Dict[int, Set]) -> bool:
     """
     Returns True if there is at least one cycle in the undirected graph.
     Vertices are enumerated from 0 to N-1, there N - number of vertices.
