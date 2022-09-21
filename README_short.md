@@ -1,4 +1,4 @@
-# Breadth-first search (python)
+# Breadth-first search
 
 Set of programming assignments that are designed to test knowledge of BFS (breadth-first search), one of the graph traversal methods.
 
