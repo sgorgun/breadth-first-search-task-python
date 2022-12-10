@@ -17,7 +17,7 @@ def calculate_all_distances_from_vertex(n: int, edges: Dict[int, Set], vertex: i
         the list ends with -1 because there is no path between vertices '2' and '3'.
 
     Parameters:
-        n (int) : number of vertices in the graph, vertices are enumerated from 0 to n-1
+        n (int) : the number of vertices in the graph, vertices are enumerated from 0 to n-1
         edges (Dict[int, Set]): adjacency dictionary which stores set of adjacent vertices for each vertex
         vertex (int): initial vertex
     Returns:

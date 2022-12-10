@@ -11,7 +11,7 @@ def check_cycle_existence(n: int, edges: Dict[int, Set]) -> bool:
     the expected result is True because there is a cycle 0 - 1 - 5 - 0.
 
     Parameters:
-        n (int) : number of vertices in the graph, vertices are enumerated from 0 to n-1
+        n (int) : the number of vertices in the graph, vertices are enumerated from 0 to n-1
         edges (Dict[int, Set]): adjacency dictionary which stores a set of adjacent vertices for each vertex
     Returns:
         bool: True if there is a cycle in the undirected graph, otherwise False
