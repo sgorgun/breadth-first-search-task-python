@@ -10,7 +10,7 @@ The following coding exercises are designed to test your knowledge of the follow
 
 The coding exercises cover the following practical problems:
 * Calculating the number of connectivity components in a given undirected graph
-* Checking whether a given directed graph has any cycles
+* Checking whether a given undirected graph has any cycles
 * Finding all the distances from a given graph vertex to the other vertices
 
 ## Coding exercises
@@ -81,7 +81,7 @@ Expected result: 1.
 Please use the template `tasks/components:find_number_of_components` for the implementation.
 
 
-### Exercise 2: Checking whether a given directed graph has any cycles
+### Exercise 2: Checking whether a given undirected graph has any cycles
 
 Given the number of vertices `n` and graph edges (adjacency dictionary) `edges` for an undirected graph, return True if graph contains a cycle and False if it doesn't. Vertices are enumerated from `0` to `n-1`.
 
