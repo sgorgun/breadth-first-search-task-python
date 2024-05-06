@@ -1,6 +1,6 @@
 """Template for programming assignment: calculate minimum distance from given vertex to all vertices."""
 from typing import Dict, List, Set
-
+from collections import deque
 
 def calculate_all_distances_from_vertex(n: int, edges: Dict[int, Set], vertex: int) -> List:
     """
@@ -24,4 +24,16 @@ def calculate_all_distances_from_vertex(n: int, edges: Dict[int, Set], vertex: i
         List: distance list which reflects the distance between initial vertex and all other vertices,
         the number at each index I shows the distance from starting vertex to vertex I
     """
-    pass
+    distances = [-1] * n
+    q = deque([vertex])
+    distances[vertex] = 0
+
+    while q:
+        v = q.popleft()
+        if v in edges:  # Check if the vertex exists in the edges dictionary
+            for u in edges[v]:
+                if distances[u] == -1:
+                    distances[u] = distances[v] + 1
+                    q.append(u)
+
+    return distances

@@ -1,6 +1,6 @@
 """Template for programming assignment: number of connected components."""
 from typing import Dict, Set
-
+from collections import deque
 
 def find_number_of_components(n: int, edges: Dict[int, Set]) -> int:
     """
@@ -17,4 +17,17 @@ def find_number_of_components(n: int, edges: Dict[int, Set]) -> int:
     Returns:
         int: number of connectivity components in the given undirected graph
     """
-    pass
+    visited = set()
+    components = 0
+
+    for i in range(n):
+        if i not in visited:
+            components += 1
+            queue = deque([i])
+            while queue:
+                vertex = queue.popleft()
+                visited.add(vertex)
+                for neighbor in edges.get(vertex, []):
+                    if neighbor not in visited:
+                        queue.append(neighbor)
+    return components
